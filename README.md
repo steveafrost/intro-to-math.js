@@ -75,7 +75,7 @@ Math.sqrt(0);
 
 ## Order of Operations
 
-Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsious Fahrenheit is to first subtract thrity-two then multipy by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
+Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius Fahrenheit is to first subtract thrity-two then multipy by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
 
 ```javascript
 function convertToFahrenheit(fahrenheit) {
