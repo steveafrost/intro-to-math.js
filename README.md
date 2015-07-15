@@ -8,6 +8,7 @@
 * Square Root
 * Order of Operations
 * Adding Strings and Numbers
+* More Complicated Rounding
 * Resources
 
 ## Rounding
@@ -144,6 +145,93 @@ However, if a string starts off the statement, JavaScript will treat the followi
 ```
 
 For more info, see the [docs for the addition operator](http://es5.github.io/#x11.6.1).
+
+## More Complicated Rounding
+
+*From Mozilla developer Network's excellent documentations on decimal rounding [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round#Decimal_rounding).*
+
+When working with numbers, you may want to require this bit from the Closure library:
+
+```javascript
+/ Closure
+(function() {
+  /**
+   * Decimal adjustment of a number.
+   *
+   * @param {String}  type  The type of adjustment.
+   * @param {Number}  value The number.
+   * @param {Integer} exp   The exponent (the 10 logarithm of the adjustment base).
+   * @returns {Number} The adjusted value.
+   */
+  function decimalAdjust(type, value, exp) {
+    // If the exp is undefined or zero...
+    if (typeof exp === 'undefined' || +exp === 0) {
+      return Math[type](value);
+    }
+    value = +value;
+    exp = +exp;
+    // If the value is not a number or the exp is not an integer...
+    if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+      return NaN;
+    }
+    // Shift
+    value = value.toString().split('e');
+    value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+    // Shift back
+    value = value.toString().split('e');
+    return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+  }
+
+  // Decimal round
+  if (!Math.round10) {
+    Math.round10 = function(value, exp) {
+      return decimalAdjust('round', value, exp);
+    };
+  }
+  // Decimal floor
+  if (!Math.floor10) {
+    Math.floor10 = function(value, exp) {
+      return decimalAdjust('floor', value, exp);
+    };
+  }
+  // Decimal ceil
+  if (!Math.ceil10) {
+    Math.ceil10 = function(value, exp) {
+      return decimalAdjust('ceil', value, exp);
+    };
+  }
+})();
+```
+
+The code above will allow you to do more complicated rounding and flooring, instead of just to the nearest whole number. These are especially helpful when working with money, which should always be rounded to the nearest hundredth.
+
+Let's take a look at some functions you could do if you incorporated the Closure library:
+
+**Round**
+
+```javascript
+Math.round10(55.55, -1);   // 55.6
+Math.round10(54.9, 1);     // 50
+Math.round10(1.005, -2);   // 1.01
+```
+
+**Floor**
+
+```javascript
+Math.floor10(55.59, -1);   // 55.5
+Math.floor10(59, 1);       // 50
+Math.floor10(-55.51, -1);  // -55.6
+Math.floor10(-51, 1);      // -60
+```
+
+**Ceil**
+
+```javascript
+Math.ceil10(55.51, -1);    // 55.6
+Math.ceil10(51, 1);        // 60
+Math.ceil10(-55.59, -1);   // -55.5
+Math.ceil10(-59, 1);       // -50
+```
 
 ## Resources
 
