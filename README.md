@@ -41,7 +41,7 @@ Math.floor(  45.95 );
 Math.floor( -45.95 );
 ```
 
-## Abosolute Value
+## Absolute Value
 
 The `Math.abs()` function returns the absolute value of a number.
 
@@ -76,7 +76,7 @@ Math.sqrt(0);
 
 ## Order of Operations
 
-Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius Fahrenheit is to first subtract thrity-two then multipy by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
+Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius Fahrenheit is to first subtract thirty-two then multiply by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
 
 ```javascript
 function convertToFahrenheit(fahrenheit) {
@@ -89,7 +89,7 @@ function convertToFahrenheit(fahrenheit) {
 convertToFahrenheit(104)
 ```
 
-If we forgot to wrap the subtraction in parentheses, the function would multiply thirty-two by five-nineths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
+If we forgot to wrap the subtraction in parentheses, the function would multiply thirty-two by five-ninths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
 
 ## Adding Strings and Numbers
 
@@ -130,7 +130,7 @@ Here are some more examples of JavaScript adding strings with one number:
 // => "51"
 ```
 
-Notice that if number preceed the strings, JavaScript will perform the math on the strings before adding the result of the math to the String at the end:
+Notice that if number preceeds the strings, JavaScript will perform the math on the strings before adding the result of the math to the String at the end:
 
 ```javascript
 5 + 5 + "5"
