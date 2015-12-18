@@ -1,15 +1,14 @@
 # JavaScript Math
 
-## Overview
+In Ruby solving for the square root of a number involves using a class method `.sqrt` on the `Math` class. While JavaScript supports a lot of the same mathematical operations as Ruby, there is one big difference. `Math` in JavaScript is actually a single built-in object that you can perform operations on. This `Math` object does have plenty of convenience methods that allow you to do math simply and easily. You can read more about math in JavaScript [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
-* Rounding
-* Floor
-* Abosolute Value
-* Square Root
-* Order of Operations
-* Adding Strings and Numbers
-* More Complicated Rounding
-* Resources
+Please feel free to use the console in the Chrome or Firefox Developer Tools to play around with these convenience methods.
+
+## Objectives
+
++ Explain how numbers work in JS
++ Round numbers to nearest whole number
++ Perform series of math problems on numbers following order of operations
 
 ## Rounding
 
@@ -76,17 +75,15 @@ Math.sqrt(0);
 
 ## Order of Operations
 
-Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius Fahrenheit is to first subtract thirty-two then multiply by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
+Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius, Fahrenheit is to first subtract thirty-two then multiply by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
 
-```javascript
-function convertToFahrenheit(fahrenheit) {
-  var celsious = (fahrenheit - 32) * 5/9;
-  var rounded = Math.round(celsious);
-  return rounded + "°C";
-}
+```js
+temp_in_farhenheit = 104
+var celsius = (temp_in_farhenheit - 32) * 5/9;
+var rounded = Math.round(celsius);
+rounded + "°C";
 
 // Returns the value "40°C"
-convertToFahrenheit(104)
 ```
 
 If we forgot to wrap the subtraction in parentheses, the function would multiply thirty-two by five-ninths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
