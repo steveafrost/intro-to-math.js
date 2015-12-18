@@ -86,12 +86,13 @@ rounded + "°C";
 // Returns the value "40°C"
 ```
 
-If we forgot to wrap the subtraction in parentheses, the function would multiply thirty-two by five-ninths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
+If we forgot to wrap the subtraction in parentheses, the code would multiply thirty-two by five-ninths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
 
 ## Adding Strings and Numbers
 
 Something to be aware of as a Rubyist learning JavaScript is that JavaScript will concatenate numbers. In Ruby, when you add the strings "1", "2", and "3", you get the return string "123". However, if you were to add the strings "1" and "2" plus the number 3, you would get a type error:
 
+Ruby:
 ```ruby
 # Ruby
 
@@ -102,8 +103,9 @@ Something to be aware of as a Rubyist learning JavaScript is that JavaScript wil
 # => TypeError: no implicit conversion of Fixnum into String
 ```
 
-Unlike Ruby, JavaScript will convert this final number into a string and tack that string onto the end:
+Unlike Ruby, JavaScript will convert this final number into a string and tack that string onto the end.
 
+Javascript:
 ```javascript
 // JavaScript
 
