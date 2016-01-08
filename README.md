@@ -1,6 +1,8 @@
 # JavaScript Math
 
-In Ruby solving for the square root of a number involves using a class method `.sqrt` on the `Math` class. While JavaScript supports a lot of the same mathematical operations as Ruby, there is one big difference. `Math` in JavaScript is actually a single built-in object that you can perform operations on. This `Math` object does have plenty of convenience methods that allow you to do math simply and easily. You can read more about math in JavaScript [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
+In Ruby solving for the square root of a number involves using a class method `.sqrt` on the `Math` class. Methods like `sqrt` in Ruby are class methods that we call on the `Math class`. 
+
+While JavaScript supports a lot of the same mathematical operations as Ruby, there is one big difference. `Math` in JavaScript is actually a single built-in object that you can perform operations on. This `Math` object does have plenty of convenience functions that allow you to do math simply and easily. Think of these functions as the equivalent to instance methods in Ruby. You can read more about math in JavaScript [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
 Please feel free to use the console in the Chrome or Firefox Developer Tools to play around with these convenience methods.
 
@@ -75,11 +77,11 @@ Math.sqrt(0);
 
 ## Order of Operations
 
-Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius, Fahrenheit is to first subtract thirty-two then multiply by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
+Just like in Ruby, parentheses indicate precedence. For instance, the equation to convert Fahrenheit to Celsius is to first subtract thirty-two then multiply by five-ninths. To prioritize this subtraction before the multiplication happens, we wrap it in parentheses.
 
 ```js
-temp_in_farhenheit = 104
-var celsius = (temp_in_farhenheit - 32) * 5/9;
+temp_in_fahrenheit = 104
+var celsius = (temp_in_fahrenheit - 32) * 5/9;
 var rounded = Math.round(celsius);
 rounded + "°C";
 
