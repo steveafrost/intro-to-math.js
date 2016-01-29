@@ -239,4 +239,4 @@ Math.ceil10(-59, 1);       // -50
 * [Addition operator](http://es5.github.io/#x11.6.1)
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
 
-<a href='https://learn.co/lessons/intro-to-math.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js' title='JavaScript Math'>JavaScript Math</a> on Learn.co and start learning to code for free.</p>
