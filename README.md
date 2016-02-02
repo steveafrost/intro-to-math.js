@@ -88,7 +88,7 @@ rounded + "°C";
 // Returns the value "40°C"
 ```
 
-If we forgot to wrap the subtraction in parentheses, the code would multiply thirty-two by five-ninths then take subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
+If we forgot to wrap the subtraction in parentheses, the code would multiply thirty-two by five-ninths then subtract this product from the value for Fahrenheit, leading to a return value of "86°C" instead (for reference, 86°C is 187°F).
 
 ## Adding Strings and Numbers
 
@@ -155,3 +155,5 @@ For more info, see the [docs for the addition operator](http://es5.github.io/#x1
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js' title='JavaScript Math'>JavaScript Math</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js'>Math in JS</a> on Learn.co and start learning to code for free.</p>
