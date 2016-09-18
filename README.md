@@ -1,16 +1,16 @@
 # JavaScript Math
 
-In Ruby solving for the square root of a number involves using a class method `.sqrt` on the `Math` class. Methods like `sqrt` in Ruby are class methods that we call on the `Math class`. 
+In Ruby, solving for the square root of a number involves using the `.sqrt` class method on the `Math` class.
 
-While JavaScript supports a lot of the same mathematical operations as Ruby, there is one big difference. `Math` in JavaScript is actually a single built-in object that you can perform operations on. This `Math` object does have plenty of convenience functions that allow you to do math simply and easily. Think of these functions as the equivalent to instance methods in Ruby. You can read more about math in JavaScript [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
+While JavaScript supports a lot of the same mathematical operations as Ruby, there is one big difference. `Math` in JavaScript is actually a single built-in object that you can perform operations on. This `Math` object does have plenty of convenience functions that allow you to do math simply and easily. Think of these functions as the equivalent of instance methods in Ruby. You can read more about math in JavaScript [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
 Please feel free to use the console in the Chrome or Firefox Developer Tools to play around with these convenience methods.
 
 ## Objectives
 
 + Explain how numbers work in JS
-+ Round numbers to nearest whole number
-+ Perform series of math problems on numbers following order of operations
++ Round numbers to the nearest whole number
++ Perform a series of math problems on numbers following order of operations
 
 ## Rounding
 
@@ -155,5 +155,3 @@ For more info, see the [docs for the addition operator](http://es5.github.io/#x1
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js' title='JavaScript Math'>JavaScript Math</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js'>Math in JS</a> on Learn.co and start learning to code for free.</p>
