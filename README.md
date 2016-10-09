@@ -131,7 +131,7 @@ Here are some more examples of JavaScript adding strings with one number:
 // => "51"
 ```
 
-Notice that if number preceeds the strings, JavaScript will perform the math on the strings before adding the result of the math to the String at the end:
+Notice that if a number, or numbers, preceed the string, JavaScript will perform the math on the numbers before adding the result of the math to the String at the end:
 
 ```javascript
 5 + 5 + "5"
@@ -155,3 +155,5 @@ For more info, see the [docs for the addition operator](http://es5.github.io/#x1
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-math.js' title='JavaScript Math'>JavaScript Math</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/intro-to-math.js'>Math in JS</a> on Learn.co and start learning to code for free.</p>
